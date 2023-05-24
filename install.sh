@@ -52,11 +52,14 @@ fi
 
 PACKAGES=(
     ack
+    alfred
+    asdf
     autojump
     bash
-    fnm
+    # fnm
     gcc
     git
+    hstr
     httpie
     hub
     imagemagick
@@ -70,24 +73,38 @@ PACKAGES=(
     tree
     watch
     wget
-    yarn
     zsh
+    yarn
 )
 
 echo "Installing packages..."
 brew install ${PACKAGES[@]}
 
 CASKS=(
+    airflow
+    apptivate
+    awareness
     chromium
+    espanso
     firefox
     google-chrome
-    keepassxc
+    grammarly
+    # Error: The cask 'keepassxc' was affected by a bug and cannot be upgraded as-is
+    # keepassxc
     keepingyouawake
+    pycharm
+    rectangle
+    secure-pipes
+    shuttle
     slack
+    tiles
     visual-studio-code
     vlc
     whatsapp
     zoom
+    xnviewmp
+    zoxide
+    warp
 )
 
 echo "Installing cask apps..."
